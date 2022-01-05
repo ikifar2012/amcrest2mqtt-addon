@@ -1,5 +1,5 @@
-# Template Add-On
-This is a Template Repo
+# amcrest2mqtt
+amcrest2mqtt Home Assistant addon based on the work of [dchesterton](https://github.com/dchesterton/amcrest2mqtt)
 # Installation
 This add-on can be added via my [Home Assistant Add-on repository](https://github.com/ikifar2012/ha-addons):
 

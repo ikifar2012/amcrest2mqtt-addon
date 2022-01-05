@@ -13,8 +13,8 @@ WORKDIR /amcrest2mqtt
 RUN ls -la
 # Copy data for add-on
 COPY run.sh /
-COPY src/amcrest2mqtt.py /
-COPY requirements.txt /
+RUN cp src/amcrest2mqtt.py /
+RUN cp requirements.txt /
 RUN pip install --no-warn-script-location --prefix=/install -r /requirements.txt
 RUN chmod +x run.sh
 CMD [ "./run.sh" ]

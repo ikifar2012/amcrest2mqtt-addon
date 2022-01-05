@@ -19,3 +19,14 @@ export MQTT_TLS_KEY=$(bashio::config 'mqtt_tls_key')
 export HOME_ASSISTANT=$(bashio::config 'home_assistant')
 export HOME_ASSISTANT_PREFIX=$(bashio::config 'home_assistant_prefix')
 
+# MQTT auto configuration
+if [ -z "$MQTT_HOST" ]; then
+export MQTT_HOST=$(bashio::services mqtt "host")
+fi
+if [ -z "$MQTT_USERNAME" ]; then
+export MQTT_USERNAME=$(bashio::services mqtt "username")
+fi
+if [ -z "$MQTT_PASSWORD" ]; then
+export MQTT_PASSWORD=$(bashio::services mqtt "password")
+fi
+exec /usr/bin/python3 -u amcrest2mqtt.py

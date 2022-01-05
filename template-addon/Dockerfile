@@ -12,8 +12,8 @@ RUN git clone https://github.com/dchesterton/amcrest2mqtt.git
 WORKDIR /amcrest2mqtt
 # Copy data for add-on
 COPY run.sh /
-COPY /amcrest2mqtt/src/amcrest2mqtt.py /
-COPY /amcrest2mqtt/requirements.txt /
+COPY src/amcrest2mqtt.py /
+COPY requirements.txt /
 RUN pip install --no-warn-script-location --prefix=/install -r /requirements.txt
 RUN chmod +x run.sh
 CMD [ "./run.sh" ]

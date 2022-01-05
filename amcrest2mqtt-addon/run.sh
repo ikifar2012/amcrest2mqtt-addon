@@ -29,4 +29,5 @@ fi
 if [ -z "$MQTT_PASSWORD" ]; then
 export MQTT_PASSWORD=$(bashio::services mqtt "password")
 fi
+
 exec /usr/bin/python3 -u amcrest2mqtt.py

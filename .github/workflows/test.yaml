@@ -15,5 +15,5 @@ jobs:
           args: |
             --test \
             --all \
-            --target template-addon \
+            --target amcrest2mqtt-addon \
             --docker-hub ikifar

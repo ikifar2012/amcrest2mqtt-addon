@@ -24,6 +24,6 @@ jobs:
         with:
           args: |
             --all \
-            --target template-addon \
+            --target amcrest2mqtt-addon \
             --docker-user ${{ secrets.DOCKERHUB_USERNAME }} \
             --docker-password ${{ secrets.DOCKERHUB_TOKEN }}

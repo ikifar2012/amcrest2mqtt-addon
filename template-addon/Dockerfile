@@ -10,6 +10,7 @@ python3 \
 git
 RUN git clone https://github.com/dchesterton/amcrest2mqtt.git
 WORKDIR /amcrest2mqtt
+RUN ls -la
 # Copy data for add-on
 COPY run.sh /
 COPY src/amcrest2mqtt.py /

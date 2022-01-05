@@ -7,6 +7,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 # Install Components
 RUN apk add --no-cache \
 python3 \
+py3-pip \
 git
 RUN git clone https://github.com/dchesterton/amcrest2mqtt.git
 WORKDIR /amcrest2mqtt

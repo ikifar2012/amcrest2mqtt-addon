@@ -11,11 +11,10 @@ py3-pip \
 git
 RUN git clone https://github.com/dchesterton/amcrest2mqtt.git
 WORKDIR /amcrest2mqtt
-RUN ls -la
 # Copy data for add-on
 COPY run.sh /
-RUN cp src/amcrest2mqtt.py /
-RUN cp requirements.txt /
+RUN cp /amcrest2mqtt/src/amcrest2mqtt.py /
+RUN cp /amcrest2mqtt/requirements.txt /
 RUN python3 -m pip install --no-warn-script-location --prefix=/install -r /requirements.txt
 RUN chmod +x run.sh
 CMD [ "./run.sh" ]

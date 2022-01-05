@@ -8,19 +8,47 @@
     "image": "ikifar/amcrest2mqtt-addon-{arch}",
     "startup": "services",
     "boot": "auto",
-    "map": ["share:rw"],
+    "map": ["ssl:r"],
     "ports": {
-      "8123/tcp": 8123,
-      "25565/udp": 25565
     },
     "ports_description": {
-      "8123/tcp": "TCP Port",
-      "25565/udp": "UDP Port"
     },
     "options": {
-        "text":"Example"
+        "AMCREST_HOST":"",
+        "AMCREST_PORT":"80",
+        "AMCREST_USERNAME":"admin",
+        "AMCREST_PASSWORD":"",
+        "STORAGE_POLL_INTERVAL":"3600",
+        "DEVICE_NAME":"",
+        "MQTT_HOST":"",
+        "MQTT_QOS":"0",
+        "MQTT_PORT":"1883",
+        "MQTT_USERNAME":"",
+        "MQTT_PASSWORD":"",
+        "MQTT_TLS_ENABLED":"false",
+        "MQTT_TLS_CA_CERT":"",
+        "MQTT_TLS_CERT":"",
+        "MQTT_TLS_KEY":"",
+        "HOME_ASSISTANT":"true",
+        "HOME_ASSISTANT_PREFIX":""
     },
     "schema": {
-        "text": "str"
+      "AMCREST_HOST":"str",
+      "AMCREST_PORT":"int",
+      "AMCREST_USERNAME":"str",
+      "AMCREST_PASSWORD":"str",
+      "STORAGE_POLL_INTERVAL":"int",
+      "DEVICE_NAME":"str",
+      "MQTT_HOST":"str",
+      "MQTT_QOS":"int",
+      "MQTT_PORT":"int",
+      "MQTT_USERNAME":"str",
+      "MQTT_PASSWORD":"str",
+      "MQTT_TLS_ENABLED":"bool",
+      "MQTT_TLS_CA_CERT":"str",
+      "MQTT_TLS_CERT":"str",
+      "MQTT_TLS_KEY":"str",
+      "HOME_ASSISTANT":"bool",
+      "HOME_ASSISTANT_PREFIX":"str"
     }
 }

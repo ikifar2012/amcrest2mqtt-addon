@@ -8,7 +8,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN apk add --no-cache \
 python3 \
 git
-RUN git clone https://github.com/dchesterton/amcrest2mqtt.git
+RUN git clone https://github.com/dchesterton/amcrest2mqtt.git /amcrest2mqtt
 # Copy data for add-on
 COPY run.sh /
 COPY /amcrest2mqtt/src/amcrest2mqtt.py /

@@ -1,2 +1,2 @@
-# This is an example
+# Coming soon
 # Configuration

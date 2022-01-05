@@ -13,9 +13,7 @@
     },
     "ports_description": {
     },
-    "services": {
-      "mqtt":"want"
-    },
+    "services": ["mqtt:want"],
     "options": {
         "amcrest_host":"",
         "amcrest_port":"80",

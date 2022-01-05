@@ -15,7 +15,7 @@ RUN ls -la
 COPY run.sh /
 RUN cp src/amcrest2mqtt.py /
 RUN cp requirements.txt /
-RUN pip install --no-warn-script-location --prefix=/install -r /requirements.txt
+RUN python3 -m pip install --no-warn-script-location --prefix=/install -r /requirements.txt
 RUN chmod +x run.sh
 CMD [ "./run.sh" ]
 # ARGS

@@ -1,0 +1,26 @@
+{
+    "name": "Template",
+    "version": "1.0",
+    "slug": "template",
+    "description": "Template Add-on",
+    "url": "https://github.com/ikifar2012/ha-addon-template/blob/master/README.md",
+    "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+    "image": "ikifar/ha-addon-template-{arch}",
+    "startup": "services",
+    "boot": "auto",
+    "map": ["share:rw"],
+    "ports": {
+      "8123/tcp": 8123,
+      "25565/udp": 25565
+    },
+    "ports_description": {
+      "8123/tcp": "TCP Port",
+      "25565/udp": "UDP Port"
+    },
+    "options": {
+        "text":"Example"
+    },
+    "schema": {
+        "text": "str"
+    }
+}

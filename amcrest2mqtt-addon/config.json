@@ -8,10 +8,13 @@
     "image": "ikifar/amcrest2mqtt-addon-{arch}",
     "startup": "services",
     "boot": "auto",
-    "map": ["ssl:r"],
+    "map": ["ssl:ro"],
     "ports": {
     },
     "ports_description": {
+    },
+    "services": {
+      "mqtt":"want"
     },
     "options": {
         "amcrest_host":"",

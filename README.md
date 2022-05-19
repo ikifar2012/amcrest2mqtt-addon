@@ -8,8 +8,6 @@ This add-on can be added via my [Home Assistant Add-on repository](https://githu
 # [Documentation](/addon/DOCS.md)
 
 # Support Me 
-[![Buy me a coffee][buymeacoffee-logo]][buymeacoffee]
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/mathesonsteplock)
 
-[buymeacoffee-logo]: https://cdn.buymeacoffee.com/buttons/default-black.png
-[buymeacoffee]: https://www.buymeacoffee.com/mathesonstep
 [here]: https://www.home-assistant.io/hassio/installing_third_party_addons/

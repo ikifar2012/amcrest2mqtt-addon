@@ -9,7 +9,7 @@ RUN apk add --no-cache \
 python3 \
 py3-pip \
 git
-RUN git clone -b 1.0.15 https://github.com/dchesterton/amcrest2mqtt.git 
+RUN git clone https://github.com/carefulcomputer/amcrest2mqtt.git
 # Copy data for add-on
 COPY run.sh /
 RUN pip install -r /amcrest2mqtt/requirements.txt

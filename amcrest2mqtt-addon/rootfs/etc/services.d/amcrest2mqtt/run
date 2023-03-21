@@ -1,4 +1,10 @@
 #!/usr/bin/env bashio
+# ==============================================================================
+# Start the amcrest2mqtt service
+# s6-overlay docs: https://github.com/just-containers/s6-overlay
+# ==============================================================================
+
+
 
 #set environment variables
 export AMCREST_HOST=$(bashio::config 'amcrest_host')
@@ -20,5 +26,5 @@ else
     bashio::log.warning "MQTT service not available, please ensure the MQTT Broken addon is installed and configured"
 fi
 
-cd /amcrest2mqtt/
-exec /usr/bin/python3 -u src/amcrest2mqtt.py
+cd /amcrest2mqtt/ || exit
+exec /usr/bin/python3 -u src/amcrest2mqtt.py || bashio::exit.nok "Failed to start amcrest2mqtt"

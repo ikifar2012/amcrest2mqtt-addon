@@ -1,7 +1,7 @@
 # 2023.3.0
 
 - Upgrade base image to 13.1.3
-- Switch to [@carefulcomputer fork](https://github.com/carefulcomputer/amcrest2mqtt)
+- Switch to [@carefulcomputer fork](https://github.com/carefulcomputer/amcrest2mqtt) addressing #10
 - Move to service to try to fix #9
 
 **Full Changelog**: https://github.com/ikifar2012/amcrest2mqtt-addon/compare/2022.5.1...2023.3.0

@@ -6,15 +6,13 @@ ENV LANG C.UTF-8
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 # Install Components
 RUN apk add --no-cache \
-python3 \
-py3-pip \
-git
+    python3 \
+    py3-pip \
+    git
 RUN git clone https://github.com/carefulcomputer/amcrest2mqtt.git
 # Copy data for add-on
-COPY run.sh /
 RUN pip install -r /amcrest2mqtt/requirements.txt
-RUN chmod +x run.sh
-CMD [ "./run.sh" ]
+COPY rootfs /
 # ARGS
 ARG BUILD_DATE
 ARG BUILD_REF

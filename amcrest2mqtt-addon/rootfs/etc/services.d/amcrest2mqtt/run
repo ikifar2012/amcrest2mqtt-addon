@@ -23,7 +23,7 @@ if bashio::services.available "mqtt"; then
     export MQTT_PORT=$(bashio::services "mqtt" "port")
     export MQTT_USERNAME=$(bashio::services "mqtt" "username")
 else
-    bashio::log.warning "MQTT service not available, please ensure the MQTT Broken addon is installed and configured"
+    bashio::log.warning "MQTT service not available, please ensure the MQTT Broker addon is installed and configured"
 fi
 
 cd /amcrest2mqtt/ || exit

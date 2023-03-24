@@ -26,5 +26,5 @@ else
     bashio::log.warning "MQTT service not available, please ensure the MQTT Broker addon is installed and configured"
 fi
 
-cd /amcrest2mqtt/ || exit
+cd /amcrest2mqtt/ || bashio::exit.nok "Failed to change directory to /amcrest2mqtt/"
 exec /usr/bin/python3 -u src/amcrest2mqtt.py || bashio::exit.nok "Failed to start amcrest2mqtt"

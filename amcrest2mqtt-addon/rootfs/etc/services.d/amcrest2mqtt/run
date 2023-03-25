@@ -1,4 +1,5 @@
-#!/usr/bin/env bashio
+#!/command/with-contenv bashio
+# shellcheck shell=bash
 # ==============================================================================
 # Start the amcrest2mqtt service
 # s6-overlay docs: https://github.com/just-containers/s6-overlay

@@ -9,7 +9,7 @@ RUN apk add --no-cache \
     python3 \
     py3-pip \
     git
-RUN git clone -b ikifar https://github.com/ikifar2012/amcrest2mqtt.git
+RUN git clone -b patch-1 https://github.com/ikifar2012/amcrest2mqtt.git
 # Copy data for add-on
 RUN pip install -r /amcrest2mqtt/requirements.txt
 COPY rootfs /
